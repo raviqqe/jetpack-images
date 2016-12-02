@@ -1,0 +1,14 @@
+{
+  "name": "raviqqe/nsd",
+  "app": {
+    "exec": [
+      "/usr/local/sbin/nsd"
+    ],
+    "user": "nsd",
+    "group": "nsd",
+    "ports": [
+      { "name": "dns", "protocol": "tcp", "port": 53 },
+      { "name": "dns", "protocol": "udp", "port": 53 }
+    ]
+  }
+}
